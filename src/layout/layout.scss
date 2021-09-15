@@ -1,0 +1,91 @@
+.testimonial {
+  position: relative;
+  .testimonial-quote {
+    right: -50px;
+    bottom: -50px;
+  }
+}
+
+.testimonial-img {
+  left: -50px;
+  top: -50px;
+  @media only screen and (max-width: 767px) {
+    left: -80px;
+  }
+}
+
+.testimonial:before {
+  left: 0;
+  bottom: -100px;
+}
+
+.item {
+  padding-bottom: 50px;
+}
+
+.slick-dots li button:before {
+  background: #141414;
+  border-radius: 2px;
+  width: 10px;
+  height: 8px;
+  margin: 0px 3px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  font-size: 0;
+}
+
+.slick-dots li.slick-active button:before {
+  background: #0072bc;
+  width: 22px;
+}
+
+.section-title h6 {
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24px;
+  margin-bottom: 10px;
+  color: #1c2045;
+  background: none;
+}
+
+.topbtn {
+  background-color: #1ca3dc !important;
+  color: #fff !important;
+  &:hover {
+    background-color: #010f5d !important;
+    color: #fff !important;
+  }
+  margin-right: auto;
+}
+
+.nav__con {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.top-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: yellow;
+  margin-right: auto;
+}
+.tog1 {
+  width: 80px;
+  height: 40px;
+
+  float: right !important;
+}
+.collapse {
+  margin-right: auto;
+}
+@media (max-width: 990px) {
+  .login-form {
+    margin-top: 25px;
+  }
+}
