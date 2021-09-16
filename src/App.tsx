@@ -85,7 +85,7 @@ function App() {
                 setActiveTab={setActiveTab}
               />
             </Route>
-            {/* <Route path="/dashboard">
+            {/* <Route path="/">
               <Dashboard />
             </Route> */}
             <PrivateRoute path="/dashboard">

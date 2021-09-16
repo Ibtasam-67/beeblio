@@ -241,7 +241,7 @@ const Subscription: FC<IProps> = ({
               <div >
                 <div className="card shadow mb-5 mx-2 bg-white rounded h-100 position-relative card-height">
                   {selectedSub === "BEEBLIO_BASIC_MONTHLY" ? (
-                    <div className="position-absolute current-subscription">
+                    <div className=" Current Subscription current-subscription">
                       <p className="">Current Subscription</p>
                     </div>
                   ) : null}
@@ -431,7 +431,8 @@ const Subscription: FC<IProps> = ({
                     <h5 className="card-title sub-name ">ADVANCED</h5>
                     <p className="card-text sub-price">$ 119.88/YR</p>
                   </div>
-                  <ul className="list-group list-group-flush cardul">
+                  <ul className="list-group list-group-flush cardul"
+                   style={{height:"350px"}}>
                     <li className="list-group-item cardItems">
                       <FontAwesomeIcon icon={faArrowRight} /> For Teachers
                     </li>
@@ -484,12 +485,14 @@ const Subscription: FC<IProps> = ({
               <div>
                 <div className="card shadow  mb-5 bg-white rounded h-100 position-relative  card-height">
                   {selectedSub === "BEEBLIO_PRO_MONTHLY" ? (
-                    <div className="position-absolute current-subscription">
-                      <p className="">Current Subscription</p>
+                    <div className="position-absolute current-subscription"
+                    >
+                      <p className=""  >Current Subscription</p>
                     </div>
                   ) : null}
                   <div className="card-body subscriptionCardHeader">
-                    <h5 className="card-title sub-name ">PRO</h5>
+                    <h5 className="card-title sub-name "
+                     style={{marginTop:"50px"}}>PRO</h5>
                     <p className="card-text sub-price">$ 25/MO</p>
                   </div>
                   <ul className="list-group list-group-flush cardul" 
@@ -554,7 +557,7 @@ const Subscription: FC<IProps> = ({
                     <p className="card-text sub-price">$ 300/YR</p>
                   </div>
                   <ul className="list-group list-group-flush cardul" 
-                 >
+                 style={{height:"350px"}} >
                     <li className="list-group-item cardItems">
                       {" "}
                       <FontAwesomeIcon icon={faArrowRight} /> For Bigger
@@ -683,7 +686,7 @@ const Subscription: FC<IProps> = ({
                     </h5>
                     <p className="card-text sub-price">$ 1500/YR</p>
                   </div>
-                  <ul className="list-group list-group-flush cardul">
+                  <ul className="list-group list-group-flush cardul"  style={{height:"350px"}}>
                     <li className="list-group-item cardItems">
                       <FontAwesomeIcon icon={faArrowRight} /> For Schools
                     </li>

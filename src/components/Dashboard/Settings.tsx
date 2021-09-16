@@ -1,7 +1,6 @@
 import React, {
   useState,
   useEffect,
-  Fragment,
   useContext,
   useRef,
   FC,
@@ -80,8 +79,15 @@ interface IProps {
   paymentInfos: any;
 }
 
+  
+
 function TabPanel(props: TabPanelProps) {
   const { children, value, index, ...other } = props;
+
+ 
+
+  
+    
 
   return (
     <div
@@ -135,7 +141,7 @@ export const Settings: FC<IProps> = ({
 }) => {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
-
+  
   const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
     setValue(newValue);
   };
@@ -321,7 +327,7 @@ export const Settings: FC<IProps> = ({
                   value={value}
                   onChange={handleChange}
                   aria-label="simple tabs example"
-                  variant="fullWidth"
+                  variant="scrollable"
                   scrollButtons="auto"
                   indicatorColor="primary"
                   className="setting-dashboard-tabs"
@@ -362,7 +368,7 @@ export const Settings: FC<IProps> = ({
                 </div>
               </TabPanel>
               <TabPanel value={value} index={2}>
-                <div  >
+                <div className="row">
                   <div className="col-12">
                     {/* <h4 className="text-blue font-24 text-center payment-method-heading pt-2 pb-2">
                       Payment Methods
